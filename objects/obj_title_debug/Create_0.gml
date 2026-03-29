@@ -3,6 +3,8 @@ if (!global.debug) {
 	return;
 }
 
+printf("Compiled on {:1}", COMPILE_TIME);
+
 options = [];
 
 array_push(options, "Start game");

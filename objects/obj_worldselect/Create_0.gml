@@ -22,14 +22,16 @@ WorldMenu = function(name, fname, directory, background, backgroundScale) constr
 	self.levelFileLocs = [];
 	self.levelNames = [];
 }
+var _path = (program_directory + "data/worlds/");
+if (global.system == OS_LINUX) _path = (program_directory + "assets/data/worlds/");
 
-var world = file_find_first(program_directory + "assets/data/worlds/*.upw", fa_archive);
+var world = file_find_first(_path + "*.upw", fa_archive);
 while (world != "") {
 	noworlds = false;
 	printf("Found new world: {:1}", world);
 	var savedir = (temp_directory + md5_string_utf8(world) + "/");
-	var zippy = zip_unzip(program_directory + "assets/data/worlds/" + world, savedir);
-	printf(program_directory + "assets/data/worlds/" + world)
+	var zippy = zip_unzip(_path + world, savedir);
+	printf(_path + world)
 	ini_open(savedir + "metadata.ini");
 	var name = ini_read_string("World", "Name", "Unnamed World");
 	var bgName = ini_read_string("World", "Background", "");

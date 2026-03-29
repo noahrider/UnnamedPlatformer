@@ -16,3 +16,7 @@ layer_background_blend(layer_background_get_id("Background"), global.level.backg
 
 instance_create_depth(0, 0, 0, obj_atlas);
 instance_create_depth(0, 0, 999999, obj_background);
+
+var pit = instance_create_depth(0, room_height + 50, 0, obj_sawblade);
+pit.image_xscale = room_width;
+pit.image_yscale = 999;

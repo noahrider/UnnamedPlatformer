@@ -3,6 +3,7 @@ function scr_start() {
 	
 	#region Constants
 	#macro VERSION "up" + (string(date_get_year(GM_build_date)) + (date_get_month(GM_build_date) < 10 ? ("0" + string(date_get_month(GM_build_date))) : string(date_get_month(GM_build_date))) + (date_get_day(GM_build_date) < 10 ? ("0" + string(date_get_day(GM_build_date))) : string(date_get_day(GM_build_date))))
+	#macro COMPILE_TIME (string(date_get_year(GM_build_date)) + "-" + (date_get_month(GM_build_date) < 10 ? ("0" + string(date_get_month(GM_build_date))) : string(date_get_month(GM_build_date))) + "-" + (date_get_day(GM_build_date) < 10 ? ("0" + string(date_get_day(GM_build_date))) : string(date_get_day(GM_build_date))) + "_" + (date_get_hour(GM_build_date) < 10 ? ("0" + string(date_get_hour(GM_build_date))) : string(date_get_hour(GM_build_date))) + "-" + (date_get_minute(GM_build_date) < 10 ? ("0" + string(date_get_minute(GM_build_date))) : string(date_get_minute(GM_build_date))) + "-" + (date_get_second(GM_build_date) < 10 ? ("0" + string(date_get_second(GM_build_date))) : string(date_get_second(GM_build_date))))
 	
 	#macro c_select #E53935
 	
