@@ -1,4 +1,5 @@
 function scr_parse_leveldata(data) {
+	printf("loading data: {:1}", data);
 	if (!string_starts_with(data, "UPL!")) {
 		printf(">>ERROR!! loading an invalid level");
 		return false;
@@ -23,6 +24,12 @@ function scr_parse_leveldata(data) {
 		
 		for (var obj = 0; obj < array_length(objects); obj++) {
 			var objectIndex = scr_get_object_index(objectKey[obj]);
+			//try and guess the index based on existing variables
+			printf(array_contains(varKeys[obj], "objectKey"));
+			if (objectIndex == noone) {
+				if (array_contains(varKeys[obj], "tileID")) objectIndex = obj_tileobject;
+				if (array_contains(varKeys[obj], "ogx")) objectIndex = obj_sawblade;
+			}
 			var instance = instance_create_depth(objx[obj], objy[obj], 0, objectIndex);
 			for (var i = 0; i < array_length(variables[obj]); i++) {
 				if (string_starts_with(variables[obj][i], "_STRING_")) {
