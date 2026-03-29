@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"langsafe",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"langsafe",
+  "parent":{
+    "name":"Langsafe",
+    "path":"folders/Scripts/Langsafe.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

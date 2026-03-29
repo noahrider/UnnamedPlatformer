@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"printf",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"printf",
+  "parent":{
+    "name":"Debug",
+    "path":"folders/Scripts/Debug.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

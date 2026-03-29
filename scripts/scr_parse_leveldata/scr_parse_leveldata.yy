@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_parse_leveldata",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_parse_leveldata",
+  "parent":{
+    "name":"Level",
+    "path":"folders/Scripts/Level.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

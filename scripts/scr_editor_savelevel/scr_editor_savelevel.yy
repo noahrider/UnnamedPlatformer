@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_editor_savelevel",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_editor_savelevel",
+  "parent":{
+    "name":"Editor",
+    "path":"folders/Scripts/Editor.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

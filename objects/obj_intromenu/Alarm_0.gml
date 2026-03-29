@@ -1,0 +1,2 @@
+progress++;
+time = 0;
