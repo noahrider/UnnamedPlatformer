@@ -20,6 +20,16 @@ if (menuBuffer > 0) menuBuffer--;
 if (menuBuffer != 0) return;
 	
 
+
+if (keyboard_check_direct(vk_escape)) {
+	menuBuffer = -1;
+		fadeout = true;
+		dosomething = function(){
+			room_goto(room_intromenu);
+		}
+}
+	
+
 if (keyboard_check_pressed(vk_left)) {
 	if (selected != 0) {
 		menuBuffer = -1;

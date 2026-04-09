@@ -99,7 +99,7 @@ if (keyboard_check_pressed(vk_f1)) {
 
 //editor menu
 if (keyboard_check_pressed(vk_tab)) {
-	if (firstTime) {
+	if (firstTime && false) {
 		ini_open("up.ini");
 		ini_write_real("Editor", "firstTime", false);
 		ini_close();

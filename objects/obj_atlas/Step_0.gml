@@ -87,8 +87,8 @@ if (_jump && (_checkInAir || sliding)) {
 	jumping = true;
 	
 	if (sliding) {
-		//printf("facings ({:1}): {:2}", -24, facings[currentFacing - 24]);
-		var _dir = -(facings[currentFacing - 24]);
+		//printf("facings ({:1}): {:2}", -4, facings[currentFacing - 4]);
+		var _dir = -(facings[currentFacing - 4]);
 		xgrav = (8 * _dir);
 		if (place_meeting(x, y + yspd, obj_simplesolid)) {
 			xgrav = 0;

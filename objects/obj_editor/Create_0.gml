@@ -1,4 +1,4 @@
-projectName = "test3.upx";
+projectName = "project.upx";
 preview = false;
 saving = false;
 saveDialogID = -1;
